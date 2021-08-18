@@ -1,0 +1,72 @@
+
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.leftNav {
+    width: 64px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.middleColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.headerNav {
+    background-color: rgb(255,255,255,0.8);
+    height: 64px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(40rem,1fr));
+    grid-gap: 1rem;
+    background-color: #ffffff;
+}
+
+.caseStudy {
+    background-color: #d6d6d6;
+    height: 70vh;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: right;
+    height: 64px;
+    background-color:#FFFFFF;
+    font-weight: 100;
+    font-size: small;
+    color: #BBBBBB;
+}
+
+.rightNav{
+    width: 64px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+}
+
