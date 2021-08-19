@@ -10,6 +10,8 @@ body {
 }
 
 .leftNav {
+    margin:0;
+    padding:0;
     width: 64px;
     height: 100vh;
     background-color: #FFFFFF;
@@ -17,6 +19,7 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .middleColumn {
@@ -36,6 +39,24 @@ body {
     text-align: center;
     justify-content: center;
 }
+
+.mainPagenav {
+    overflow: hidden;
+    background-color: white;
+    /* padding: 90px 10px; Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    top: 0; /* At the top */
+    height: 64px;
+    display: inline-block;
+    z-index: 99;
+    position: sticky;
+    text-align: center;
+}
+
+.disciplineNav {
+    color: rgb(199, 160, 75);
+}
+
 
 .mainContent {
     display: grid;
@@ -70,3 +91,20 @@ body {
     top: 0;
 }
 
+.icon:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 48px; /* Change this to whatever width you want. */
+    /* padding-top: 20px; This creates some space between the element and the border. */
+    border-bottom: 1px solid #DDDDDD; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.filterIcon:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 48px; /* Change this to whatever width you want. */
+    /* padding-top: 20px; This creates some space between the element and the border. */
+    border-top: 1px solid #DDDDDD; /* This creates the border. Replace black with whatever color you want. */
+}
