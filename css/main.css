@@ -108,3 +108,59 @@ body {
     /* padding-top: 20px; This creates some space between the element and the border. */
     border-top: 1px solid #DDDDDD; /* This creates the border. Replace black with whatever color you want. */
 }
+
+svg {
+    width: 64px;
+    height: 64px;
+    fill: #DDDDDD;
+    transition: all .5s ease-in-out;
+}
+
+/* svg:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    fill: black
+} */
+
+#samicolonLogoSVG{
+    fill: #505050;
+}
+
+#samicolonLogoSVG:hover {
+    transform: rotate(360deg);
+    transition: 0.8s;
+    fill: #C7A04B;
+}
+
+#ezpickSVG:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    fill: #0033FF;
+}
+
+#sparkSVG:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    fill: #87786E;
+}
+
+#cfiaSVG:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    fill: #3A593D;
+}
+
+#traversedSVG:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    fill: #90D7D3;
+}
+
+#filterIconSVG:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    fill: black;
+}
+
+
+
