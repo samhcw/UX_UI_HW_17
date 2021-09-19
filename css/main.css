@@ -1,12 +1,29 @@
 
 
+
 body {
-    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background-image: url("/images/heroimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 150vh;
+    background-color: #F9F9F9;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 .leftNav {
@@ -14,7 +31,6 @@ body {
     padding:0;
     width: 64px;
     height: 100vh;
-    background-color: #FFFFFF;
     position: sticky;
     top: 0;
     display: flex;
@@ -30,7 +46,6 @@ body {
 }
 
 .headerNav {
-    background-color: rgb(255,255,255,0.8);
     height: 64px;
     position: sticky;
     top: 0;
@@ -42,7 +57,6 @@ body {
 
 .mainPagenav {
     overflow: hidden;
-    background-color: white;
     /* padding: 90px 10px; Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     top: 0; /* At the top */
@@ -60,15 +74,82 @@ body {
 
 .mainContent {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(40rem,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
     grid-gap: 1rem;
-    background-color: #ffffff;
+}
+
+.hero {
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #7582b8; */
+    text-align: center;
+
+}
+
+.spread {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #7582b8; */
+    text-align: center;
+}
+
+.disciplineNav{
+    color: #DDDDDD;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #C7A04B;
+    text-underline-offset: 5px;
+}
+.disciplineSelector{
+    color: #DDDDDD;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #C7A04B;
+    text-underline-offset: 5px;
+}
+
+.connect {
+    color: #C7A04B;
+    text-decoration: none;
 }
 
 .caseStudy {
     background-color: #d6d6d6;
     height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+    color:#F9F9F9;
+}
 
+.UXUI {
+    background-image: url("/images/hifi-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.branding {
+    background-image: url("/images/spark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.illustration {
+    background-image: url("/images/hnd3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer {
@@ -77,7 +158,7 @@ body {
     flex-direction: column;
     text-align: right;
     height: 64px;
-    background-color:#FFFFFF;
+    background-color:#F9F9F9;
     font-weight: 100;
     font-size: small;
     color: #BBBBBB;
@@ -86,9 +167,10 @@ body {
 .rightNav{
     width: 64px;
     height: 100vh;
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     position: sticky;
     top: 0;
+    z-index: 10000;
 }
 
 .icon:after {
@@ -163,4 +245,11 @@ svg {
 }
 
 
-
+#mainMenu {
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+}
